@@ -80,7 +80,9 @@ public class Main {
     
     // Methods
 //    System.out.println(Byte.compare((byte) 25, (byte) 10));
-    System.out.println(Byte.decode("011"));
+//    System.out.println(Byte.decode("011"));
+//    System.out.println(Byte.parseByte("11", 9));
+    System.out.println(Byte.toUnsignedInt((byte) -22));
 
   }
 }
