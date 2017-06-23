@@ -98,8 +98,29 @@ public class Main {
 //    System.out.println(Character.MAX_RADIX);
 //    System.out.println(Character.MIN_RADIX);
 //    System.out.println(Character.SIZE);
+//    System.out.println(Character.charCount(65535));
+//    System.out.println(Character.charCount(65536));
 
-    
+//    System.out.println(Integer.toHexString(Character.codePointBefore("dog", 2)));
+//    System.out.println(Character.compare('a', 'c'));
+//    System.out.println(Character.digit('A', 16)); // Tells you what digit a char is in that radix
+//    System.out.println(Character.digit(65, 16)); // Tells you the digit of a code point in that radix
+//    System.out.println(Character.forDigit(10, 16));
+//    System.out.println(
+//            Byte.compare(Character.getDirectionality('A'), Character.DIRECTIONALITY_RIGHT_TO_LEFT));
+//    System.out.println(Character.getName(65));
+//    System.out.println(Character.getNumericValue('G'));
+//    System.out.println(Character.getType('b'));
+//    System.out.println(Character.isAlphabetic(Character.codePointAt("C", 0)));
+//    System.out.println(Character.isDigit('4'));
+//    System.out.println(Character.isSpaceChar(' '));
+//    System.out.println(Character.isWhitespace(' '));
+//    System.out.println(Character.reverseBytes('G'));
+//    System.out.println(Character.reverseBytes('䜀'));
+//    System.out.println(Character.toTitleCase('b'));
+
+
+
   }
 }
 
