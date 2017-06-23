@@ -90,6 +90,15 @@ public class Main {
     /**
      * Character Class Testing
      */
+//    System.out.println(Integer.parseInt("FFFF", 16)); // Unicode code unit upper limit
+//    System.out.println(Integer.parseInt("10FFFF", 16)); // Unicode code point upper limit
+    
+//    System.out.println(Character.BYTES); // 2 bytes because Java uses UTF-16 encoding
+//    System.out.println(Integer.toHexString(Character.MAX_CODE_POINT));
+//    System.out.println(Character.MAX_RADIX);
+//    System.out.println(Character.MIN_RADIX);
+//    System.out.println(Character.SIZE);
+
     
   }
 }
