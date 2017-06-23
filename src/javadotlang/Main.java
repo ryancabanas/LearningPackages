@@ -82,8 +82,15 @@ public class Main {
 //    System.out.println(Byte.compare((byte) 25, (byte) 10));
 //    System.out.println(Byte.decode("011"));
 //    System.out.println(Byte.parseByte("11", 9));
-    System.out.println(Byte.toUnsignedInt((byte) -22));
+//    System.out.println((int) Math.pow(2, 8));
+//    System.out.println(Byte.toUnsignedInt((byte) -1));
+//    System.out.println(Byte.toUnsignedInt((byte) 255));
 
+
+    /**
+     * Character Class Testing
+     */
+    
   }
 }
 
