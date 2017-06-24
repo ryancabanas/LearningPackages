@@ -5,6 +5,8 @@
  */
 package javadotlang;
 
+import java.util.Map;
+
 /**
  *
  * @author Ryan Cabanas
@@ -120,7 +122,16 @@ public class Main {
 //    System.out.println(Character.toTitleCase('b'));
 
 
+    /**
+     * Class Class Testing
+     */
+//    System.out.println(new String().getClass().getName());
+//    System.out.println(String.class.getName());
 
+    Class<?> test = Map.class;
+    System.out.println(test.getName());
+    
+    
   }
 }
 
