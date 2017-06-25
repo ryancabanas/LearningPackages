@@ -5,9 +5,6 @@
  */
 package javadotlang;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.AnnotatedType;
-
 /**
  *
  * @author Ryan Cabanas
@@ -149,9 +146,20 @@ public class Main {
 //    java.lang.reflect.AnnotatedType annoTest2 = Integer.class.getAnnotatedSuperclass();
 //    System.out.println(annoTest2.getType().getTypeName());
     
+//    java.lang.annotation.Retention test = 
+//            java.lang.annotation.Repeatable.class.getAnnotation(
+//                    java.lang.annotation.Retention.class);
+
 //    java.lang.annotation.Annotation[] annoTest3 = java.lang.annotation.Repeatable.class.getAnnotations();
 //    for (Annotation annotation : annoTest3) {
 //      System.out.println(annotation.toString());
+//    }
+
+//    java.lang.annotation.Retention[] test = 
+//                java.lang.annotation.Repeatable.class.getAnnotationsByType(
+//                        java.lang.annotation.Retention.class);
+//    for (Retention retention : test) {
+//      System.out.println(retention.toString());
 //    }
     
 //    System.out.println(Character.Subset.class.getName());
@@ -171,7 +179,7 @@ public class Main {
 
     System.out.println("");
     
-    
+
   }
 }
 
