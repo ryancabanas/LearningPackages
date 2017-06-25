@@ -5,7 +5,8 @@
  */
 package javadotlang;
 
-import java.util.Map;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.AnnotatedType;
 
 /**
  *
@@ -128,8 +129,47 @@ public class Main {
 //    System.out.println(new String().getClass().getName());
 //    System.out.println(String.class.getName());
 
-    Class<?> test = Map.class;
-    System.out.println(test.getName());
+//    Class<?> integerClass = Integer.class;
+//    Integer test = new Integer(50);
+//    Number num = (Number) test;
+//    Number num2 = Number.class.cast(test);
+    
+//    Class<?> bubba;
+//    try {
+//      bubba = Class.forName("java.lang.Integer");
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    java.lang.reflect.AnnotatedType[] annoTest = String.class.getAnnotatedInterfaces();
+//    for (AnnotatedType annotatedType : annoTest) {
+//      System.out.println(annotatedType.getType().getTypeName());
+//    }
+    
+//    java.lang.reflect.AnnotatedType annoTest2 = Integer.class.getAnnotatedSuperclass();
+//    System.out.println(annoTest2.getType().getTypeName());
+    
+//    java.lang.annotation.Annotation[] annoTest3 = java.lang.annotation.Repeatable.class.getAnnotations();
+//    for (Annotation annotation : annoTest3) {
+//      System.out.println(annotation.toString());
+//    }
+    
+//    System.out.println(Character.Subset.class.getName());
+//    System.out.println(Character.Subset.class.getCanonicalName());
+//    String name = Character.Subset.class.getName();
+//    String canonicalName = Character.Subset.class.getCanonicalName();
+//    Class<?> test;
+//    Class<?> test2;
+//    try {
+//      test = Character.Subset.class.forName(name); // Works
+////      test2 = Character.Subset.class.forName(canonicalName); // Does not work
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+    
+
+    System.out.println("");
     
     
   }
