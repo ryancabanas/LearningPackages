@@ -9,7 +9,7 @@ package javadotlang;
  *
  * @author Ryan Cabanas
  */
-public class Main {
+public class Main extends ClassLoader {
   public static void main(String[] args) {
 //    /**
 //     * Appendable Interface Test
@@ -175,13 +175,24 @@ public class Main {
 //      System.out.println(e);
 //    }
 
+//    Class<?>[] test = Character.class.getClasses();
     
+//    java.lang.ClassLoader test = SomeClass.class.getClassLoader();
+//    Class<?> test2;
+//    try {
+//      test2 = test.loadClass("java.lang.String");      
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
 
     System.out.println("");
     
 
   }
 }
+
+class SomeClass {}
 
 class BooleanClassTest {
   Boolean boo1 = new Boolean(false);
