@@ -185,6 +185,21 @@ public class Main extends ClassLoader {
 //      System.out.println(e);
 //    }
 
+//    Class<?> test = boolean[].class.getComponentType();
+//    Class<?> test2 = boolean[].class;
+
+//    java.lang.reflect.Constructor<String> test;
+//    String test2;
+//    String test3;
+//    try {
+//      test = String.class.getConstructor(String.class);
+//      test2 = test.toString();
+//      test3 = test.newInstance("A test.");
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+
 
     System.out.println("");
     
