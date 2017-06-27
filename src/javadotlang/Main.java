@@ -5,6 +5,11 @@
  */
 package javadotlang;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
+
 /**
  *
  * @author Ryan Cabanas
@@ -151,7 +156,7 @@ public class Main extends ClassLoader {
 //                    java.lang.annotation.Retention.class);
 
 //    java.lang.annotation.Annotation[] annoTest3 = java.lang.annotation.Repeatable.class.getAnnotations();
-//    for (Annotation annotation : annoTest3) {
+//    for (java.lang.annotation.Annotation annotation : annoTest3) {
 //      System.out.println(annotation.toString());
 //    }
 
@@ -199,6 +204,112 @@ public class Main extends ClassLoader {
 //      System.out.println(e);
 //    }
 
+//    java.lang.reflect.Constructor<?>[] test;
+//    test = String.class.getConstructors();
+//    for (Constructor<?> constructor : test) {
+//      System.out.println(constructor.toString());
+//    }
+
+//    java.lang.annotation.Documented test;
+//    test = java.lang.annotation.Repeatable.class.getDeclaredAnnotation(
+//            java.lang.annotation.Documented.class);
+//    String test2 = test.toString();
+
+//    java.lang.annotation.Annotation[] test = java.lang.annotation.Repeatable.class.getDeclaredAnnotations();
+//    for (java.lang.annotation.Annotation annotation : test) {
+//      System.out.println(annotation.toString());
+//    }
+
+//    java.lang.reflect.Field test;
+//    String test2;
+//    try {
+//      test = Integer.class.getDeclaredField("BYTES");
+//      test2 = test.toString();
+//      System.out.println(test2);
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    java.lang.reflect.Method[] test;
+//    test = Integer.class.getDeclaredMethods();
+//    for (Method method : test) {
+//      System.out.println(method.toString());      
+//    }
+
+//    java.lang.reflect.Type[] test;
+//    try {
+//      test = java.util.stream.Stream.class.getGenericInterfaces();
+//      for (Type type : test) {
+//        System.out.println(type.getTypeName());
+//      }
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    java.lang.reflect.Type test;
+//    java.lang.reflect.Type test2;
+//    GenericA<String> test3 = new GenericB<>();
+//    java.lang.reflect.Type test4;
+//
+//    try {
+//      test = Integer.class.getGenericSuperclass();
+//      test2 = GenericB.class.getGenericSuperclass();
+//      test4 = test3.getClass().getGenericSuperclass();
+//      System.out.println(test.getTypeName());
+//      System.out.println(test2.getTypeName());
+//      System.out.println(test4.getTypeName());
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    Class<?>[] test;
+//    try {
+//      test = String.class.getInterfaces();
+//      for (Class<?> class1 : test) {
+//        System.out.println(class1.toGenericString());
+//      }
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    java.lang.reflect.Method test;
+//    try {
+//      test = java.util.stream.Stream.class.getMethod("limit", long.class);
+//      System.out.println(test.toGenericString());
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    java.lang.reflect.Method[] test;
+//    try {
+//      test = java.util.stream.Stream.class.getMethods();
+//      for (Method method : test) {
+//        System.out.println(method.toGenericString());
+//      }
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    int mods = String.class.getModifiers();
+//    System.out.println(Modifier.toString(mods));
+
+//    java.security.ProtectionDomain test;
+//    test = ClassLoader.class.getProtectionDomain();
+//    System.out.println(test.toString());
+    
+//    Class<?> test;
+//    try {
+//      test = GenericB.class.getSuperclass();
+//      System.out.println(test.toGenericString());
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+
+//    String test = java.util.stream.Stream.class.getTypeName();
+//    System.out.println(test);
+
+//    java.util.stream.Stream<String> test = java.util.stream.Stream.empty();
+//    java.lang.reflect.TypeVariable<Class<?>>[] test2 = test.getClass().getTypeParameters();
 
 
     System.out.println("");
@@ -206,6 +317,9 @@ public class Main extends ClassLoader {
 
   }
 }
+
+class GenericA<T> {}
+class GenericB<T> extends GenericA<T> {}
 
 class SomeClass {}
 
