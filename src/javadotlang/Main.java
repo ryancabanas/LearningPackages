@@ -9,6 +9,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.lang.reflect.Type;
+import java.lang.reflect.TypeVariable;
 
 /**
  *
@@ -308,8 +309,15 @@ public class Main extends ClassLoader {
 //    String test = java.util.stream.Stream.class.getTypeName();
 //    System.out.println(test);
 
-//    java.util.stream.Stream<String> test = java.util.stream.Stream.empty();
-//    java.lang.reflect.TypeVariable<Class<?>>[] test2 = test.getClass().getTypeParameters();
+//    java.util.HashMap<Boolean, Integer> test = new java.util.HashMap<>();
+//    java.lang.reflect.TypeVariable[] test2 = test.getClass().getTypeParameters();
+//    for (TypeVariable typeVariable : test2) {
+//      String test3 = typeVariable.getName();
+//      System.out.println(test3);
+//    }
+
+    
+
 
 
     System.out.println("");
