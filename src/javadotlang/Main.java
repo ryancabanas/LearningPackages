@@ -5,12 +5,6 @@
  */
 package javadotlang;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Type;
-import java.lang.reflect.TypeVariable;
-
 /**
  *
  * @author Ryan Cabanas
@@ -316,15 +310,46 @@ public class Main extends ClassLoader {
 //      System.out.println(test3);
 //    }
 
+//    boolean test = java.lang.annotation.Repeatable.class.isAnnotation();
     
+//    boolean test = java.lang.annotation.Repeatable.class.isAnnotationPresent(
+//            java.lang.annotation.Documented.class);
 
+//    GenericA test = new GenericB() {
+//      String doSomething() {
+//        return "Soemthing.";
+//      }};
+//    String test2 = "Something else.";
+//    boolean test3 = test.getClass().isAnonymousClass();
+//    boolean test4 = test2.getClass().isAnonymousClass();
 
+//    boolean[] test = new boolean[2];
+//    boolean test2 = test.getClass().isArray();
+
+//    boolean test = java.lang.Number.class.isAssignableFrom(java.lang.Integer.class);
+
+//    boolean test = java.lang.Number.class.isInstance(new Integer(5));
+
+    ClassA test = new ClassA();
+    ClassA.ClassB test2 = test.new ClassB();
+    boolean test3 = test2.getClass().isLocalClass();
+    boolean test4 = test.doNothing();
+    boolean test5 = test2.getClass().isMemberClass();
 
     System.out.println("");
     
 
   }
 }
+
+class ClassA {
+  class ClassB {}
+  boolean doNothing() {
+    class ClassC {}
+    return ClassC.class.isLocalClass();
+  }
+}
+
 
 class GenericA<T> {}
 class GenericB<T> extends GenericA<T> {}
