@@ -304,8 +304,8 @@ public class Main extends ClassLoader {
 //    System.out.println(test);
 
 //    java.util.HashMap<Boolean, Integer> test = new java.util.HashMap<>();
-//    java.lang.reflect.TypeVariable[] test2 = test.getClass().getTypeParameters();
-//    for (TypeVariable typeVariable : test2) {
+//    java.lang.reflect.TypeVariable<?>[] test2 = test.getClass().getTypeParameters();
+//    for (java.lang.reflect.TypeVariable typeVariable : test2) {
 //      String test3 = typeVariable.getName();
 //      System.out.println(test3);
 //    }
@@ -330,12 +330,15 @@ public class Main extends ClassLoader {
 
 //    boolean test = java.lang.Number.class.isInstance(new Integer(5));
 
-    ClassA test = new ClassA();
-    ClassA.ClassB test2 = test.new ClassB();
-    boolean test3 = test2.getClass().isLocalClass();
-    boolean test4 = test.doNothing();
-    boolean test5 = test2.getClass().isMemberClass();
+//    ClassA test = new ClassA();
+//    ClassA.ClassB test2 = test.new ClassB();
+//    boolean test3 = test2.getClass().isLocalClass();
+//    boolean test4 = test.doNothing();
+//    boolean test5 = test2.getClass().isMemberClass();
 
+    
+    
+    
     System.out.println("");
     
 
