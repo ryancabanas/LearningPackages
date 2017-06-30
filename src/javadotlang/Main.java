@@ -5,6 +5,8 @@
  */
 package javadotlang;
 
+import java.util.stream.Stream;
+
 /**
  *
  * @author Ryan Cabanas
@@ -336,8 +338,20 @@ public class Main extends ClassLoader {
 //    boolean test4 = test.doNothing();
 //    boolean test5 = test2.getClass().isMemberClass();
 
+//    boolean result = int.class.isPrimitive();
+//    boolean result2 = Integer.class.isPrimitive();
     
+//    String test = "test";
+//    try {
+//      test = String.class.newInstance();      
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+//    test = "something";
     
+//    String test = Stream.class.toGenericString();
+
+//    String test = Stream.class.toString();
     
     System.out.println("");
     
