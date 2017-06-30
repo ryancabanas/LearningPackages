@@ -5,6 +5,9 @@
  */
 package javadotlang;
 
+import java.lang.reflect.TypeVariable;
+import java.util.HashMap;
+
 /**
  *
  * @author Ryan Cabanas
@@ -303,9 +306,9 @@ public class Main extends ClassLoader {
 //    String test = java.util.stream.Stream.class.getTypeName();
 //    System.out.println(test);
 
-//    java.util.HashMap<Boolean, Integer> test = new java.util.HashMap<>();
-//    java.lang.reflect.TypeVariable<?>[] test2 = test.getClass().getTypeParameters();
-//    for (java.lang.reflect.TypeVariable typeVariable : test2) {
+//    HashMap<?, ?> test = new HashMap<>();
+//    TypeVariable<? extends Class<? extends HashMap>>[] test2 = test.getClass().getTypeParameters();
+//    for (TypeVariable typeVariable : test2) {
 //      String test3 = typeVariable.getName();
 //      System.out.println(test3);
 //    }
@@ -336,7 +339,6 @@ public class Main extends ClassLoader {
 //    boolean test4 = test.doNothing();
 //    boolean test5 = test2.getClass().isMemberClass();
 
-    
     
     
     System.out.println("");
