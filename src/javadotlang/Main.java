@@ -5,13 +5,6 @@
  */
 package javadotlang;
 
-<<<<<<< HEAD
-import java.util.stream.Stream;
-=======
-import java.lang.reflect.TypeVariable;
-import java.util.HashMap;
->>>>>>> bcf04427f84edcfb1c697af282ad7913933211c2
-
 /**
  *
  * @author Ryan Cabanas
@@ -354,17 +347,13 @@ public class Main extends ClassLoader {
 //    }
 //    test = "something";
     
-<<<<<<< HEAD
+
 //    String test = Stream.class.toGenericString();
 
 //    String test = Stream.class.toString();
     
 
-    
-
-=======
->>>>>>> bcf04427f84edcfb1c697af282ad7913933211c2
-    System.out.println("");
+        System.out.println("");
     
 
   }
