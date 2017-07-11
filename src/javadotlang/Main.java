@@ -187,6 +187,9 @@ public class Main extends ClassLoader {
 
 //    Class<?> test = boolean[].class.getComponentType();
 //    Class<?> test2 = boolean[].class;
+//    System.out.println(Integer[].class);
+//    System.out.println(int[].class);
+//    System.out.println(String[].class);
 
 //    java.lang.reflect.Constructor<String> test;
 //    String test2;
