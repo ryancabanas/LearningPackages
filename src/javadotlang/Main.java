@@ -5,6 +5,11 @@
  */
 package javadotlang;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+
+
 /**
  *
  * @author Ryan Cabanas
@@ -355,9 +360,15 @@ public class Main extends ClassLoader {
 
 //    String test = Stream.class.toString();
     
-
-        System.out.println("");
+    DateTimeFormatter test = DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss");
+    System.out.println(LocalDateTime.now().format(test));
+            
     
+    System.out.println("");
+   
+        
+        
+        
   }
   
    
