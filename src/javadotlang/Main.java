@@ -5,7 +5,12 @@
  */
 package javadotlang;
 
+<<<<<<< HEAD
 import java.util.stream.Stream;
+=======
+import java.lang.reflect.TypeVariable;
+import java.util.HashMap;
+>>>>>>> bcf04427f84edcfb1c697af282ad7913933211c2
 
 /**
  *
@@ -305,9 +310,9 @@ public class Main extends ClassLoader {
 //    String test = java.util.stream.Stream.class.getTypeName();
 //    System.out.println(test);
 
-//    java.util.HashMap<Boolean, Integer> test = new java.util.HashMap<>();
-//    java.lang.reflect.TypeVariable<?>[] test2 = test.getClass().getTypeParameters();
-//    for (java.lang.reflect.TypeVariable typeVariable : test2) {
+//    HashMap<?, ?> test = new HashMap<>();
+//    TypeVariable<? extends Class<? extends HashMap>>[] test2 = test.getClass().getTypeParameters();
+//    for (TypeVariable typeVariable : test2) {
 //      String test3 = typeVariable.getName();
 //      System.out.println(test3);
 //    }
@@ -349,6 +354,7 @@ public class Main extends ClassLoader {
 //    }
 //    test = "something";
     
+<<<<<<< HEAD
 //    String test = Stream.class.toGenericString();
 
 //    String test = Stream.class.toString();
@@ -356,6 +362,8 @@ public class Main extends ClassLoader {
 
     
 
+=======
+>>>>>>> bcf04427f84edcfb1c697af282ad7913933211c2
     System.out.println("");
     
 
