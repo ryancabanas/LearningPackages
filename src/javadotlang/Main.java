@@ -5,12 +5,6 @@
  */
 package javadotlang;
 
-import java.lang.reflect.TypeVariable;
-import java.util.Formatter;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-
 /**
  *
  * @author Ryan Cabanas
@@ -193,6 +187,9 @@ public class Main extends ClassLoader {
 
 //    Class<?> test = boolean[].class.getComponentType();
 //    Class<?> test2 = boolean[].class;
+//    System.out.println(Integer[].class);
+//    System.out.println(int[].class);
+//    System.out.println(String[].class);
 
 //    java.lang.reflect.Constructor<String> test;
 //    String test2;
@@ -342,10 +339,24 @@ public class Main extends ClassLoader {
 //    boolean test4 = test.doNothing();
 //    boolean test5 = test2.getClass().isMemberClass();
 
-      
+//    boolean result = int.class.isPrimitive();
+//    boolean result2 = Integer.class.isPrimitive();
+    
+//    String test = "test";
+//    try {
+//      test = String.class.newInstance();      
+//    } catch (Exception e) {
+//      System.out.println(e);
+//    }
+//    test = "something";
+    
 
+//    String test = Stream.class.toGenericString();
 
-    System.out.println("");
+//    String test = Stream.class.toString();
+    
+
+        System.out.println("");
     
   }
   
