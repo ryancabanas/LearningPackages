@@ -366,8 +366,8 @@ public class Main extends ClassLoader {
 //    String test = "10:15:15";
 //    System.out.println(test.chars().filter(x -> x == ':').count());
 
-    String test = "1232";
-    System.out.println(test.matches("\\d++"));
+//    String test = "1232";
+//    System.out.println(test.matches("\\d++"));
 
     
     System.out.println("");
