@@ -5,10 +5,12 @@
  */
 package javadotlang;
 
+import java.text.Collator;
+import java.text.RuleBasedCollator;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-
-
+import java.util.Arrays;
+import java.util.Locale;
 
 /**
  *
@@ -369,6 +371,19 @@ public class Main extends ClassLoader {
 //    String test = "1232";
 //    System.out.println(test.matches("\\d++"));
 
+    Locale[] locales = Locale.getAvailableLocales();
+    String[] strings = new String[locales.length];
+    for (int i = 0; i < strings.length; i++) {
+      strings[i] = locales[i].toString();
+    }
+    Arrays.sort(strings, String::compareToIgnoreCase);
+    for (String string : strings) {
+      System.out.println(string);
+    }
+    
+    
+    
+    
     
     System.out.println("");
    
